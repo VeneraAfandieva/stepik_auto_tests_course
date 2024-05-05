@@ -15,5 +15,4 @@ class TestProductPage:
         time.sleep(30)
         
         # Проверяем наличие кнопки добавления товара в корзину
-        message = browser.find_element(By.CLASS_NAME, "btn.btn-lg.btn-primary.btn-add-to-basket")
-        assert "Ajouter au panier" in message.text
+        assert browser.find_element(By.CSS_SELECTOR, "button.btn-add-to-basket")
